@@ -1,0 +1,57 @@
+MỘT CHIẾC SINH NHẬT — MÃ NGUỒN ĐẦY ĐỦ
+
+1. CHẠY TRÊN MÁY
+Giải nén toàn bộ file ZIP (chuột phải > Extract All).
+Mở index.html bằng Chrome hoặc Edge. Không cần Node.js, không cần Internet.
+Đừng mở index.html ngay bên trong ZIP vì ảnh và mã phụ có thể không được tải.
+
+2. ĐỔI TÊN VÀ LỜI CHÚC
+Mở config.js bằng Notepad hoặc VS Code.
+- name: tên bạn được chúc (hiện để 'Kim Loan').
+- sender: tên người gửi (hiện để 'Thanh Sang').
+- subtitle: dòng giới thiệu.
+- letter: từng đoạn trong lá thư. Giữ dấu nháy và dấu phẩy như mẫu.
+Lưu file UTF-8, quay lại trình duyệt và bấm Ctrl+F5.
+
+3. ĐỔI ẢNH
+Thư mục assets có photo-1.jpg đến photo-9.jpg, là 9 ảnh bạn đã gửi.
+Thay bằng ảnh mới cùng tên hoặc sửa src trong config.js.
+Ảnh trang đầu nằm trong index.html (photo-3.jpg và photo-1.jpg).
+Ảnh bìa album là photo-7.jpg, cũng trong index.html.
+Sửa caption trong config.js để đổi lời ghi chú dưới ảnh.
+
+4. THÊM NHẠC RIÊNG
+Đã gắn sẵn bài happy birthday.mp3 bạn gửi. Bấm Bật nhạc để nghe.
+Cách gắn nhạc vào món quà để gửi bạn:
+- Chép bài hát vào assets, đặt tên nhac.mp3.
+- Trong config.js đổi đường dẫn music thành 'assets/nhac.mp3'.
+- Gửi cả thư mục/ZIP để ảnh và nhạc đi cùng trang.
+Trình duyệt yêu cầu bấm Bật nhạc, không tự phát khi mới mở trang.
+
+5. CÁC FILE
+index.html: bố cục trang.
+style.css: màu sắc, font, kích thước, bố cục điện thoại.
+app.js: mở quà, album, nến, pháo giấy, nhạc.
+config.js: thông tin có thể cá nhân hóa.
+assets/: ảnh và nhạc của bạn.
+
+6. GỬI CHO BẠN
+Gửi ZIP và nhờ bạn giải nén rồi mở index.html trên máy tính.
+Muốn mở bằng một đường link trên điện thoại, cần đưa cả thư mục lên dịch vụ hosting web tĩnh.
+Đường dẫn file trên máy của bạn không phải link công khai.
+Bản online được tạo riêng để bạn xem trước; không mặc định là link ai cũng xem được.
+
+Thiết kế lấy cảm hứng từ video bạn gửi: nền đỏ rượu, chọn thư / hoa / bánh.
+Nội dung là lời chúc tình bạn, có thêm album 9 ảnh.
+Không có backend, không gửi ảnh hay bài nhạc được chọn lên máy chủ.
+
+BẢN CẬP NHẬT CHO KIM LOAN
+Đã dùng font Noto có đủ dấu tiếng Việt, kèm font offline và giấy phép.
+Bánh kem và bó hoa là SVG chỉnh sửa được. illustrations.js chứa hình trong cửa sổ quà.
+Bó hoa có animation, bánh có nến tắt/bật. Tôn trọng chế độ giảm chuyển động của thiết bị.
+Tên ở chân trang được viết hoa, chữ ký cuối thư chỉ còn Thanh Sang.
+
+TƯƠNG TÁC MỚI
+Chạm bó hoa hoặc nút nhận hoa để hoa nở, cánh hoa bay và đọc lời chúc tiếp theo.
+Chạm bánh hoặc nút thổi nến để tắt nến, xem khói và pháo giấy. Bấm lại để thắp nến.
+Đã bỏ mục chọn nhạc trên giao diện; đổi bài trong config.js nếu cần.
